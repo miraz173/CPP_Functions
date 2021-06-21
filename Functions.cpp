@@ -4,32 +4,6 @@
 #include <windows.h>
 using namespace std;
 
-void wall(int constantCellNum)							  /*constantCellNum=6*/
-{															/* ------- */
-	for (int row = 0; row <= constantCellNum; ++row)		/* |X|X|X| */
-	{													    /* ------- */
-		for (int col = 0; col <= constantCellNum; ++col)	/* |X|X|X| */
-		{													/* ------- */
-			if (row%2 == 0)									/* |X|X|X| */
-			{												/* ------- */
-				cout<<'-';
-			}
-			else if (col%2 == 0)
-			{
-				cout<<'|';
-			}
-			else //things inside borders
-			{
-				if (false)//if true, print things
-				{
-					/* code */
-				}
-				else cout<<'X';
-			}
-		}
-		cout<<'\n';
-	}
-}
 
 int getSize(char* charArray) //returns the actual size of an char* array. char[20]="Hi!\n"; actual size 4.
 {
